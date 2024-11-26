@@ -42,3 +42,7 @@ class Solution:
             return dp1[i][j]
         thirdChild = solveBottomLeft(n-1,0)
         return firstChild+secondChild+thirdChild
+
+        # TimeComplexity: O(n)+O(n**2)+O(n**2)
+        # O(n) for first Child and O(n**2) for the other 2 children which involves dp
+        # SpaceComplexity: O(n**2) for the 2 dp arrays
